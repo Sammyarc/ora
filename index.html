@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en" class="no-motion">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171c16">
+  <meta name="description" content="Meet Ora, a portable lighting concept for the spaces and moments you call your own. Shape the glow, find your atmosphere, and save your favorite light.">
+  <title>Ora — Light that feels like home</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/dm-sans-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/ora-hero-room.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="experience.css">
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Ora home">ora<span class="brand-star" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="asterisk"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m18.065 8.496-12.125 7" />
+  <path d="m5.94 8.504 12.125 7" />
+</svg></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#object">The object</a>
+        <a href="#light-studio">Light studio</a>
+        <a href="#spaces">Your space</a>
+      </nav>
+      <a class="header-cta" href="#your-light">Keep your glow <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-environment" aria-hidden="true"><img src="assets/ora-hero-room.webp" width="1800" height="1012" alt="" fetchpriority="high"><div class="hero-environment-glow"></div></div><div class="hero-shade" aria-hidden="true"></div>
+      <div class="shell hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow hero-enter"><span class="status-dot" aria-hidden="true"></span> LIGHT THAT MAKES ROOM FOR YOU.</p>
+          <h1 id="hero-heading"><span>Good light.</span><span class="heading-accent">Better evenings.</span></h1>
+          <p class="hero-description hero-enter">Let the day settle. Ora brings a warmer feeling to the places you call your own.</p>
+          <div class="hero-actions hero-enter">
+            <a class="button button-lime" href="#light-studio">Find your light <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></a>
+            <a class="hero-secondary" href="#object">Meet Ora <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m19 12-7 7-7-7" />
+</svg></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <div class="shell hero-controls">
+          <div class="power-control">
+            <button class="power-button" type="button" data-power aria-pressed="true" aria-label="Lamp power"><svg class="icon" aria-hidden="true" focusable="false" data-icon="power"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2v10" />
+  <path d="M18.4 6.6a9 9 0 1 1-12.77.04" />
+</svg></button>
+            <div><span class="control-overline">YOUR EVENING, YOUR LIGHT</span><span class="power-label" data-power-label>Light is on</span></div>
+          </div>
+          <div class="hero-dimmer range-control">
+            <label for="hero-brightness">Make yourself comfortable <output data-brightness-value for="hero-brightness">70%</output></label>
+            <input id="hero-brightness" type="range" min="10" max="100" value="70" step="1" data-brightness aria-label="Lamp brightness">
+          </div>
+          <a class="scroll-cue" href="#object"><span>A different kind<br>of everyday object.</span><span class="circle-arrow" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-down"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m19 12-7 7-7-7" />
+</svg></span></a>
+        </div>
+      </div>
+      <noscript><p class="no-script-note">Enable JavaScript to adjust the light. You can still explore Ora and its spaces below.</p></noscript>
+    </section>
+
+    <section class="day-night" aria-labelledby="day-night-heading">
+      <div class="day-night-sticky">
+        <div class="journey-reveal">
+        <img class="journey-room" src="assets/ora-room.webp" width="1100" height="880" alt="Evening settles around Ora in a quiet living room" decoding="async">
+        <div class="journey-shade" aria-hidden="true"></div>
+        <div class="journey-disc" aria-hidden="true"></div>
+        <div class="journey-heading shell"><p class="eyebrow">THE WORLD SLOWS. THE LIGHT STAYS.</p><h2 id="day-night-heading">Less daylight.<br><span class="heading-accent">More feeling.</span></h2><p>Scroll into the quieter part of your day.</p></div>
+        <div class="journey-footer shell"><span>ONE ROOM. ANOTHER FEELING.</span><span class="journey-time" aria-hidden="true">17:00</span><div class="journey-track" aria-hidden="true"><span></span></div><span>DAY <svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg> NIGHT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="object-section light-section" id="object" aria-labelledby="object-heading">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow" data-reveal>LESS OBJECT. MORE ATMOSPHERE.</p>
+          <div class="object-copy">
+            <h2 class="section-title" id="object-heading" data-reveal>A small object.<br>A <span class="heading-accent">softer</span> way to live.</h2>
+            <div class="object-description" data-reveal><p>Some things change a room without asking for much space.</p><p>Ora is an exploration of portable light: a familiar silhouette, a quiet material, and a glow you can make your own. There for the last chapter. The longer conversation. The moment you get home.</p></div>
+          </div>
+        </div>
+        <figure class="daylight-figure" data-reveal>
+          <div class="daylight-image"><img src="assets/ora-daylight.webp" width="1200" height="750" alt="Ora's brushed metal lamp in sunlight on a pale stone pedestal" loading="lazy" decoding="async"><span class="photo-stamp" aria-hidden="true">Good company.<br><span class="heading-accent">Even off.</span></span></div>
+          <figcaption><span>Quiet by day. A little magic by night.</span><span>ORA — AN EXPLORATION IN LIGHT</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="studio-section" id="light-studio" aria-labelledby="studio-heading">
+      <div class="shell studio-heading-row">
+        <div data-reveal><p class="eyebrow">SET THE FEELING</p><h2 class="section-title" id="studio-heading">Every hour.<br>Its own <span class="heading-accent">light.</span></h2></div>
+        <p class="section-description" data-reveal>Some moments need a little focus.<br>Others, a little less of everything.<br>Find the atmosphere that feels like you.</p>
+      </div>
+      <div class="shell studio-layout">
+        <figure class="room-preview" data-reveal>
+          <div class="room-scene"><img src="assets/ora-room.webp" width="1100" height="880" alt="Ora glowing on a walnut sideboard beside an olive lounge chair at dusk" loading="lazy" decoding="async"><div class="room-tint" aria-hidden="true"></div></div>
+          <figcaption><span class="room-live"><span class="status-dot" aria-hidden="true"></span> YOUR ATMOSPHERE</span><span data-scene-label>3000 K · 70%</span></figcaption>
+        </figure>
+        <div class="studio-controls" data-reveal>
+          <fieldset class="preset-fieldset"><legend>Start with a feeling</legend>
+            <button class="preset" type="button" data-preset="unwind" aria-pressed="false"><span class="preset-orb preset-orb-warm" aria-hidden="true"></span><span><strong>Wind down</strong><small>A softer end to the day.</small></span><span class="preset-temperature">2200 K</span><span class="preset-check" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></button>
+            <button class="preset" type="button" data-preset="settle" aria-pressed="true"><span class="preset-orb preset-orb-settle" aria-hidden="true"></span><span><strong>Settle in</strong><small>Stay a little longer.</small></span><span class="preset-temperature">3000 K</span><span class="preset-check" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></button>
+            <button class="preset" type="button" data-preset="focus" aria-pressed="false"><span class="preset-orb preset-orb-focus" aria-hidden="true"></span><span><strong>Find focus</strong><small>Room for a fresh thought.</small></span><span class="preset-temperature">4200 K</span><span class="preset-check" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></button>
+          </fieldset>
+          <div class="studio-ranges">
+            <div class="range-control"><label for="studio-brightness">Brightness <output data-brightness-value for="studio-brightness">70%</output></label><input type="range" id="studio-brightness" min="10" max="100" value="70" step="1" data-brightness><div class="range-endpoints"><span>Soft glow</span><span>A little brighter</span></div></div>
+            <div class="range-control"><label for="warmth">Color temperature <output data-temperature-value for="warmth">3000 K</output></label><input class="warmth-range" type="range" id="warmth" min="2200" max="4500" value="3000" step="100"><div class="range-endpoints"><span>Warm / 2200 K</span><span>Clear / 4500 K</span></div></div>
+          </div>
+          <div class="studio-control-footer"><button class="text-button" type="button" data-power aria-pressed="true"><span class="mini-power" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="power"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2v10" />
+  <path d="M18.4 6.6a9 9 0 1 1-12.77.04" />
+</svg></span><span data-power-label>Light is on</span></button><button class="text-button reset-button" type="button" id="reset-light">Reset light <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="rotate-ccw"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+  <path d="M3 3v5h5" />
+</svg></span></button></div>
+          <a class="text-link studio-save-link" href="#your-light">Make this light yours <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section light-section" id="details" aria-labelledby="details-heading">
+      <div class="shell details-layout">
+        <figure class="material-figure" data-reveal><img src="assets/ora-material.webp" width="800" height="800" alt="Ora shade detail showing brushed aluminum, the narrow seam and warm opal diffuser" loading="lazy" decoding="async"><figcaption><span>Brushed aluminum. Soft opal light.</span></figcaption></figure>
+        <div class="details-copy">
+          <p class="eyebrow" data-reveal>THOUGHTFULLY SIMPLE</p>
+          <h2 class="section-title" id="details-heading" data-reveal>Nothing extra.<br>Everything<br><span class="heading-accent">considered.</span></h2>
+          <div class="detail-list" data-reveal>
+            <details open><summary><span>Beautiful before it glows.</span><span class="detail-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="plus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="M12 5v14" />
+</svg><svg class="icon" aria-hidden="true" focusable="false" data-icon="minus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+</svg></span></summary><p>A softly curved shade. A slender stem. The warmth of satin metal. A shape that belongs in a room, even when the light is off.</p></details>
+            <details><summary><span>Light with a softer edge.</span><span class="detail-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="plus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="M12 5v14" />
+</svg><svg class="icon" aria-hidden="true" focusable="false" data-icon="minus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+</svg></span></summary><p>The concept pairs a metal shade with an opal diffuser, creating a gentle pool of light beneath it. Explore the studio to find your own balance of warmth and brightness.</p></details>
+            <details><summary><span>A place in your everyday.</span><span class="detail-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="plus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+  <path d="M12 5v14" />
+</svg><svg class="icon" aria-hidden="true" focusable="false" data-icon="minus"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 12h14" />
+</svg></span></summary><p>Imagined as a portable companion, Ora moves with the moment: from a quiet corner to the center of the table. One familiar object. Plenty of ways to feel at home.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spaces-section light-section" id="spaces" aria-labelledby="spaces-heading">
+      <div class="shell">
+        <div class="spaces-heading"><div data-reveal><p class="eyebrow">WHERE LIGHT LANDS</p><h2 class="section-title" id="spaces-heading">At home.<br><span class="heading-accent">Wherever you are.</span></h2></div><p class="section-description" data-reveal>A corner becomes your corner.<br>A table becomes a place to stay.<br>It starts with a little light.</p></div>
+        <div class="spaces-grid">
+          <figure class="space-figure space-bedside" data-reveal><div class="space-image"><img src="assets/ora-bedside.webp" width="800" height="1000" alt="Ora lighting a bedside table beside soft ivory linen" loading="lazy" decoding="async"><span class="space-time">21:40</span></div><figcaption><div><h3>One more chapter.</h3><p>For the part of the day that's just yours.</p></div></figcaption></figure>
+          <figure class="space-figure space-table" data-reveal><div class="space-image"><img src="assets/ora-table.webp" width="800" height="1000" alt="Ora glowing at the center of a small dining table set for two" loading="lazy" decoding="async"><span class="space-time">19:15</span></div><figcaption><div><h3>Let the conversation linger.</h3><p>A little glow. A little more time together.</p></div></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="save-section" id="your-light" aria-labelledby="save-heading">
+      <div class="shell save-layout">
+        <div class="save-copy" data-reveal><p class="eyebrow">A FEELING WORTH KEEPING</p><h2 class="section-title" id="save-heading">Keep a little<br><span class="heading-accent">light for later.</span></h2><p class="section-description">Give your atmosphere a name.<br>Save it for your next visit, or send a little glow to someone else.</p><a class="text-link" href="#light-studio">Still finding your light? <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></a></div>
+        <div class="saved-light" data-reveal>
+          <div class="saved-light-art" aria-hidden="true"><div class="saved-halo"></div><img src="assets/ora-lamp.webp" width="720" height="900" alt="" loading="lazy" decoding="async"><span class="saved-wordmark">ora</span></div>
+          <form id="save-light-form" class="save-form">
+            <label for="light-name">Name your atmosphere</label><input id="light-name" name="name" type="text" maxlength="36" value="Evening glow" autocomplete="off" required>
+            <div class="saved-settings"><span data-temperature-value>3000 K</span><span data-brightness-value>70%</span><span data-power-label>Light is on</span></div>
+            <div class="save-actions"><button class="button button-lime" type="submit">Save my light <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></span></button><button class="share-button" id="share-light" type="button" aria-label="Copy a link to this light"><svg class="icon" aria-hidden="true" focusable="false" data-icon="share"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 2v13" />
+  <path d="m16 6-4-4-4 4" />
+  <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+</svg></button></div>
+            <p class="save-feedback" id="save-feedback" role="status">A little light, ready when you are.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-beam" aria-hidden="true"><div></div></div>
+    <div class="footer-invitation shell"><p class="eyebrow">ONE LAST THING BEFORE YOU GO</p><h2>Leave a little<br><span class="heading-accent">light on.</span></h2><button class="finale-switch" type="button" data-power aria-pressed="true" aria-label="Switch the closing light"><span class="switch-track" aria-hidden="true"><span></span></span><span data-power-label>Light is on</span></button></div>
+    <div class="shell footer-top"><p>For the spaces.<br>For the moments.<br><span>For you.</span></p><nav aria-label="Footer navigation"><a href="#object">The object <svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></a><a href="#light-studio">Light studio <svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></a><a href="#spaces">Your space <svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up-right"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M7 7h10v10" />
+  <path d="M7 17 17 7" />
+</svg></a></nav><a class="back-top" href="#top" aria-label="Back to top"><span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false" data-icon="arrow-up"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m5 12 7-7 7 7" />
+  <path d="M12 19V5" />
+</svg></span></a></div>
+    <div class="footer-signature" aria-hidden="true"><div class="footer-wordmark"><span>o</span><span>r</span><span>a</span><span class="footer-star"><svg class="icon" aria-hidden="true" focusable="false" data-icon="asterisk"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 5v14" />
+  <path d="m18.065 8.496-12.125 7" />
+  <path d="m5.94 8.504 12.125 7" />
+</svg></span></div></div>
+    <div class="shell footer-bottom"><p>Ora — an independent lighting concept.</p><p>Made to change the feeling of a room.</p><button type="button" class="footer-power" data-power aria-pressed="true"><span class="status-dot" aria-hidden="true"></span><span data-power-label>Light is on</span></button></div>
+    <p class="shell concept-note">A design exploration. The lamp and lighting settings are illustrative; no products are offered for sale.</p>
+  </footer>
+  <p class="screen-reader-only" id="light-announcement" role="status"></p>
+  <dialog class="share-dialog" id="share-dialog" aria-labelledby="share-heading"><form method="dialog"><button class="dialog-close" aria-label="Close share dialog"><svg class="icon" aria-hidden="true" focusable="false" data-icon="x"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg></button></form><p class="eyebrow">PASS ON A LITTLE LIGHT</p><h2 id="share-heading">Your glow, ready to share.</h2><label for="share-url">Copy this link</label><textarea id="share-url" rows="4" readonly></textarea><p>The link opens your chosen warmth and brightness.</p></dialog>
+</body>
+</html>
